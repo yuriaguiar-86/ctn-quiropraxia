@@ -54,3 +54,16 @@ details[open] summary {
     color: var(--brow);
     margin: .5em 0 1em 1em;
 }
+
+@media screen and (max-width: 1023px) {
+    .container_amelioration {
+        margin: 50px 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container_amelioration,
+    .frequently_questions {
+        margin: 50px;
+    }
+}
