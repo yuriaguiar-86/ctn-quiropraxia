@@ -42,3 +42,22 @@
     border-radius: 5px;
     border: 1px solid var(--brow);
 }
+
+@media screen and (max-width: 767px) {
+    main h2 {
+        text-align: left;
+    }
+
+    .container_about,
+    .container_generation {
+        margin: 50px;
+    }
+
+    .container_generation section {
+        flex-direction: column;
+    }
+
+    .container_generation figcaption {
+        text-align: left;
+    }
+}
