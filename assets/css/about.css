@@ -1,0 +1,44 @@
+/* ABOUT */
+.container_about {
+    margin: 50px 100px;
+    border-bottom: 1px solid var(--brow);
+}
+
+.container_about p {
+    margin-bottom: 10px;
+}
+
+.container_about p:last-child {
+    margin-bottom: 50px;
+}
+
+/* FORMAÇÃO */
+.container_generation {
+    margin: 50px 100px;
+}
+
+.container_generation section {
+    gap: 2em;
+    display: flex;
+}
+
+.container_generation img {
+    width: 250px;
+    height: auto;
+}
+
+.container_generation figcaption {
+    text-align: center;
+}
+
+.generations {
+    gap: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.generations p {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--brow);
+}

@@ -1,0 +1,149 @@
+/* SERVICES */
+.container_services {
+    margin: 50px 100px;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.services {
+    gap: 4px;
+    margin: 50px 0;
+    color: var(--white);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services section {
+    gap: 1em;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h3 {
+    text-transform: uppercase;
+}
+
+.service_background_light {
+    background: var(--green-light);
+}
+
+.service_background_green {
+    background: var(--green);
+}
+
+.service_background_dark {
+    background: var(--green-dark);
+}
+
+/* MORE */
+.container_more {
+    display: flex;
+}
+
+.container_more div {
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white);
+    background: var(--grey);
+}
+
+.container_more p span {
+    font-size: 2em;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.container_more p span:first-child {
+    font-weight: 300;
+}
+
+.container_more a {
+    padding: 10px;
+    max-width: 150px;
+    border-radius: 5px;
+
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--green);
+}
+
+.container_more a:hover {
+    color: var(--white);
+    background: var(--green-dark);
+}
+
+/* PARTNERS */
+.container_partners {
+    margin: 50px 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners {
+    gap: 15px;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.partners h3 {
+    text-transform: uppercase;
+}
+
+.read_more {
+    min-width: 250px;
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--brow);
+
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.read_more img {
+    max-width: 100%;
+    max-height: 170px;
+}
+
+.read_more h3 {
+    margin: 15px 0;
+}
+
+.read_more p {
+    padding: 5px;
+    max-width: 130px;
+    border-radius: 5px;
+    border: 1px solid var(--brow);
+
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+}
+
+.read_more p:hover {
+    border: 1px solid var(--green-dark);
+    color: var(--white);
+    background: var(--green);
+}

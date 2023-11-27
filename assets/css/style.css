@@ -1,0 +1,206 @@
+:root {
+    --brow: #666666;
+    --grey: #373737;
+    --gray: #262626;
+    --white: #FFFFFF;
+    --black: #000000;
+    --green-light: #6CB33E;
+    --green: #55942e; 
+    --green-dark: #487B2A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--green-dark);
+}
+
+a {
+    transition: .3s ease; 
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover:not(.link_ctn) {
+    color: var(--black);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* LOGO */
+.logo_ctn {
+    gap: .5em;
+    display: flex;
+    align-items: center;
+}
+
+.logo_ctn p {
+    font-weight: 700;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_ctn p span:first-child {
+    font-size: 1.75em;
+}
+
+/* HEADER CONTACTS */
+.header_contacts {
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_contacts {
+    gap: 1em;
+    display: flex;
+}
+
+figure img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.container_contacts p {
+    font-weight: 700;
+    color: var(--green-light);
+}
+
+.container_contacts span {
+    font-weight: 500;
+    color: var(--brow);
+}
+
+/* HEADER NAVEGATION */
+.header_navegation {
+    padding: 10px 100px;
+    color: var(--white);
+    background: var(--green-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_navegation ul {
+    gap: 1.5em;
+    display: flex;
+    list-style-type: none;
+}
+
+.header_navegation .link_ctn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: var(--green);
+    transition: .3s ease;
+}
+
+.header_navegation .link_ctn:hover {
+    background: var(--green-dark);
+}
+
+/* MAIN VIDEO */
+.main_video h1 {
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    transform: translate(-50%, 0%);
+    
+    color: white;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+video {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+.container_address {
+    padding: 50px 100px;
+    color: var(--white);
+    background: var(--grey);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_address section:first-child {
+    gap: 2em;
+    margin-right: 20px;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.times_address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.times {
+    margin-top: 1em;
+    color: var(--green);
+}
+
+.address {
+    gap: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    padding: 20px 0;
+    color: var(--white);
+    text-align: center;
+    background: var(--gray);
+}
+
+#button_home {
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    z-index: 999;
+    
+    color: var(--white);
+    position: fixed;
+    display: none;
+    border: none;
+    cursor: pointer;
+    background: var(--green-dark);
+}
