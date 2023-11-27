@@ -130,6 +130,7 @@ figure img {
 
 /* MAIN VIDEO */
 .main_video h1 {
+    z-index: 1;
     top: 50%;
     left: 50%;
     font-size: 2em;
@@ -203,4 +204,10 @@ video {
     border: none;
     cursor: pointer;
     background: var(--green-dark);
+}
+
+@media screen and (min-width: 1023px) {
+    .navbar {
+        display: none;
+    }
 }
