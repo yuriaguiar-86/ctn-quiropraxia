@@ -211,3 +211,24 @@ video {
         display: none;
     }
 }
+
+@media screen and (max-width: 1023px) {
+    .main_video h1 {
+        top: 35%;
+    }
+
+    .container_address {
+        gap: 2em;
+        padding: 50px 50px;
+        flex-direction: column;
+    }
+
+    .container_address section:first-child {
+        margin-right: 0;
+        min-width: 100%;
+    }
+
+    .times_address {
+        gap: 1em;
+    }
+}
