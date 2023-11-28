@@ -17,8 +17,7 @@
 
 .menu_items li {
     margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1em;
     list-style: none;
 }
 
@@ -28,6 +27,13 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .link_ctn_mobile {
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 2em;
+        background: var(--green-light);
+    }
+
     .navbar {
         position: fixed;
     }
@@ -111,9 +117,13 @@
     }
 
     .navbar .menu_items li {
-        margin-bottom: 1.5rem;
-        font-size: 1.3rem;
+        margin-bottom: 1em;
+        font-size: 1rem;
         font-weight: 500;
+    }
+
+    .navbar .menu_items li:last-child {
+        margin-top: .5em;
     }
 
     .container_navbar input[type="checkbox"]:checked ~ .menu_items {
@@ -135,12 +145,6 @@
 
 @media (max-width: 500px) {
     .navbar .menu_items li {
-        font-size: 1.6rem;
-    }
-
-    .navbar .menu_items li {
-        margin-bottom: 2.5rem;
-        font-size: 1.8rem;
-        font-weight: 500;
+        font-size: 1em;
     }
 }
